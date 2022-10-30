@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+display: grid;
+
+
+}
+.login-forom{
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+
+}
+h1{
+  
+  border-bottom: solid 1px silver;
+  padding: 0 0 20px 0;
+  text-align: center;
+  
+}
+form{
+    padding: 0 72px ;
+    position: relative;
+}
+form .usps{
+    margin: 30px 0;
+    border-bottom: 2px solid silver;
+    position: relative;
+    
+}
+input{
+    width :100%;
+    height: 40px;
+    border: none;
+    cursor: default;
+   
+    outline: none;
+    background: none;
+    
+}
+label{
+    position: absolute;
+    left: 0;
+    margin-top: 3px;
+    color: silver;
+    top: 12px;
+    transition: .4s;
+}
+a{
+    
+    text-decoration: none;
+    color: silver;
+    
+}
+.login{
+    width: 100%;
+    height: 40px;
+    background-color: #2137fd;
+    color :white;
+    border-radius: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    transition: .4s;
+}
+ .nam{
+    margin: 0 0 20px 0;
+}
+.fgp{
+    display: flex;
+    margin-top: 0px;
+    color: silver;
+}
+.login:hover{
+    color: white;
+    background-color: #FF2525;
+}
+.nam a, .fgp a{
+    transition: 0.4s;
+}
+.nam a:hover, .fgp a:hover {
+    color: #2137fd;
+  
+
+}
+input:focus ~ label{
+top:-18px;
+color: #2137fd;
+
+}
+.sp1::before, .sp2::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top:42px;
+    background-color: #2137fd;
+    left: 0;
+}
+input:focus ~ span::before{
+width: 100%;
+
+}
